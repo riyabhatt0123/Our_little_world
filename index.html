@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Little World ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============================= -->
+    <!-- WELCOME / LOGIN SCREEN -->
+    <!-- ============================= -->
+
+    <section id="welcome-screen">
+
+        <!-- Cute floating decorations -->
+        <div class="star star-1">✦</div>
+        <div class="star star-2">✧</div>
+        <div class="star star-3">✦</div>
+
+        <div class="heart heart-1">♡</div>
+        <div class="heart heart-2">♡</div>
+
+        <!-- Main welcome card -->
+        <div class="welcome-card">
+
+            <div class="small-text">
+                ✨ A SECRET LITTLE PLACE ✨
+            </div>
+
+            <h1>
+                Welcome to<br>
+                <span>Our World</span>
+            </h1>
+
+            <h2>
+                Mr. Khadus ❤️
+            </h2>
+
+            <p class="intro-text">
+                A tiny universe made of memories,
+                inside jokes, chaos and a ridiculous
+                amount of love.
+            </p>
+
+            <div class="divider">
+                ⋆｡°✩
+            </div>
+
+            <p class="question">
+                But first... 👀
+                <br>
+                <strong>Prove you're actually him.</strong>
+            </p>
+
+            <p class="hint">
+                Enter the date that started our story.
+            </p>
+
+            <!-- Anniversary date -->
+            <input
+                type="text"
+                id="anniversary-date"
+                placeholder= "DD/MM/YYYY";
+                maxlength="10"
+            >
+
+            <button onclick="checkLogin()">
+                Unlock Our World 🔓
+            </button>
+
+            <p id="error-message"></p>
+
+            <div class="bottom-text">
+                P.S. Yes, there is absolutely no escape. 😂
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ============================= -->
+    <!-- MAIN WEBSITE -->
+    <!-- ============================= -->
+
+    <!-- ============================= -->
+<!-- OUR WORLD -->
+<!-- ============================= -->
+
+<section id="main-content">
+
+    <div class="world-container">
+
+        <div class="world-top">
+            <p class="world-label">✦ ACCESS GRANTED ✦</p>
+
+            <h1>
+                Welcome Home,<br>
+                <span>Mr. Khadus ❤️</span>
+            </h1>
+
+            <p class="world-intro">
+                You made it into our little world.
+                <br>
+                Now let's see what you've unlocked... 👀
+            </p>
+        </div>
+
+
+        <!-- ============================= -->
+        <!-- WORLD CARDS -->
+        <!-- ============================= -->
+
+        <div class="world-grid">
+
+            <!-- OUR STORY -->
+
+            <div class="world-card story-card"
+                 onclick="openSection('story')">
+
+                <div class="card-icon">
+                    📖
+                </div>
+
+                <h2>
+                    Our Story
+                </h2>
+
+                <p>
+                    How this whole crazy little
+                    story began...
+                </p>
+
+                <span class="card-arrow">
+                    Enter →
+                </span>
+
+            </div>
+
+
+            <!-- MEMORY LANE -->
+
+            <div class="world-card memory-card"
+                 onclick="openSection('memory-lane')">
+
+                <div class="card-icon">
+                    📸
+                </div>
+
+                <h2>
+                    Memory Lane
+                </h2>
+
+                <p>
+                    Some moments I would
+                    happily relive forever.
+                </p>
+
+                <span class="card-arrow">
+                    Enter →
+                </span>
+
+            </div>
+
+
+            <!-- KHADUS FILES -->
+
+            <div class="world-card khadus-card"
+                 onclick="openSection('khadus')">
+
+                <div class="card-icon">
+                    😂
+                </div>
+
+                <h2>
+                    The Khadus Files
+                </h2>
+
+                <p>
+                    Important evidence against
+                    you. Unfortunately, there's a lot.
+                </p>
+
+                <span class="card-arrow">
+                    Enter →
+                </span>
+
+            </div>
+
+
+            <!-- LETTER -->
+
+            <div class="world-card letter-card"
+                 onclick="openSection('letter')">
+
+                <div class="card-icon">
+                    💌
+                </div>
+
+                <h2>
+                    A Letter For You
+                </h2>
+
+                <p>
+                    Things I don't always say,
+                    but probably should.
+                </p>
+
+                <span class="card-arrow">
+                    Enter →
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- LITTLE BOTTOM MESSAGE -->
+
+        <p class="world-footer">
+            ✨ Take your time. There's no rush. ✨
+        </p>
+
+    </div>
+
+</section>
+<!-- ================================= -->
+<!-- OUR STORY SECTION -->
+<!-- ================================= -->
+
+<section id="story-section" class="story-section">
+
+    <button class="back-button" onclick="goBack()">
+        ← Back to Our World
+    </button>
+
+    <div class="story-container">
+
+        <p class="story-label">
+            ✦ CHAPTER ONE ✦
+        </p>
+
+        <h1>
+            How did <span>we</span> happen? ❤️
+        </h1>
+
+        <p class="story-opening">
+            Honestly? Our story did not begin like a
+            typical love story. 😂
+        </p>
+
+
+        <!-- STORY TIMELINE -->
+
+        <div class="timeline">
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    ⚔️
+                </div>
+
+                <div class="timeline-content">
+
+                    <h2>
+                        It all started with enemies.
+                    </h2>
+
+                    <p>
+                        Well... not actual enemies.
+                        But we definitely weren't planning
+                        on becoming each other's favourite person.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    🏫
+                </div>
+
+                <div class="timeline-content">
+
+                    <h2>
+                        NSS vs. Rotaract
+                    </h2>
+
+                    <p>
+                        You loved NSS.
+                        I loved Rotaract.
+                        And apparently, that was enough
+                        for us to keep fighting. 😂
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-item">
+
+                <div class="timeline-icon">
+                    👀
+                </div>
+
+                <div class="timeline-content">
+
+                    <h2>
+                        The teasing era
+                    </h2>
+
+                    <p>
+                        Then there were those girls who would
+                        say "Hey Rahul" and flirt with you...
+                        and naturally, I had to tease you about it.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-item special-story">
+
+                <div class="timeline-icon">
+                    🍱
+                </div>
+
+                <div class="timeline-content">
+
+                    <h2>
+                        The hungry girl incident.
+                    </h2>
+
+                    <p>
+                        And then came one completely ordinary day.
+                    </p>
+
+                    <p>
+                        I was hungry.
+                    </p>
+
+                    <p>
+                        You bought me food.
+                    </p>
+
+                    <p>
+                        And the strangest part?
+                    </p>
+
+                    <p class="story-highlight">
+                        You didn't even complain about it. ❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-item final-story">
+
+                <div class="timeline-icon">
+                    ❤️
+                </div>
+
+                <div class="timeline-content">
+
+                    <h2>
+                        And somehow... everything changed.
+                    </h2>
+
+                    <p>
+                        I don't know if it happened at that exact
+                        moment.
+                    </p>
+
+                    <p>
+                        But somewhere between the fights,
+                        the teasing, and that food...
+                    </p>
+
+                    <p class="story-final-text">
+                        I fell in love with you.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <button class="story-next-button"
+                onclick="goBack()">
+
+            Continue Our Journey ✨
+
+        </button>
+
+
+    </div>
+
+</section>
+
+<!-- ============================= -->
+<!-- MEMORY LANE -->
+<!-- ============================= -->
+
+<section class="memory-lane" id="memory-lane">
+
+    <div class="memory-heading">
+        <p class="memory-small-title">A little walk down</p>
+        <h2>Memory Lane 💌</h2>
+        <p class="memory-intro">
+            Seven little pieces of our story,
+            because apparently one memory is never enough. 🤍
+        </p>
+    </div>
+
+    <div class="memory-container">
+
+        <!-- MEMORY 1 -->
+        <div class="memory-card">
+            <div class="memory-number">01</div>
+
+            <div class="memory-photo">
+                <img src="images/before.jpg" alt="Our memory 1">
+            </div>
+
+            <div class="memory-content">
+                <h3>Where It All Began 🌸</h3>
+                <p>
+                    When I had a crush on you and you were completely clueless.” 😂
+                    You had absolutely no idea what was happening. 
+                    Meanwhile, I was already quietly falling for you..
+                </p>
+            </div>
+        </div>
+
+
+        <!-- MEMORY 2 -->
+        <div class="memory-card reverse">
+            <div class="memory-number">02</div>
+
+            <div class="memory-photo">
+                <img src="images/first.jpg" alt="Our memory 2">
+            </div>
+
+            <div class="memory-content">
+                <h3>Our First Picture Toegther 🫶</h3>
+                <p>
+                    I remember you said you couldn't get serious...”
+                    And look at you now. 👀
+                    3 years of togetherness. ❤️.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- MEMORY 3 -->
+        <div class="memory-card">
+            <div class="memory-number">03</div>
+
+            <div class="memory-photo">
+                <img src="images/cute.jpg" alt="Our memory 3">
+            </div>
+
+            <div class="memory-content">
+                <h3>Us Being Us 🤭</h3>
+                <p>
+                    No fancy plans. No perfect moments.
+                    Just us being completely ridiculous together.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- MEMORY 4 -->
+        <div class="memory-card reverse">
+            <div class="memory-number">04</div>
+
+            <div class="memory-photo">
+                <img src="images/fav.jpg" alt="Our memory 4">
+            </div>
+
+            <div class="memory-content">
+                <h3>The Moments I Keep 💗</h3>
+                <p>
+                    Some memories don't need a special occasion.
+                    They stay special simply because they were ours.
+                    I can't even forget this day. 
+                    We fought, I cried you cried, but you never left me.
+                    That's the beauty of your love
+                </p>
+            </div>
+        </div>
+
+
+        <!-- MEMORY 5 -->
+        <div class="memory-card">
+            <div class="memory-number">05</div>
+
+            <div class="memory-photo">
+                <img src="images/care.jpg" alt="Our memory 5">
+            </div>
+
+            <div class="memory-content">
+                <h3>Through Everything 🌙</h3>
+                <p>
+                    We've laughed, argued, annoyed each other
+                    and still somehow ended up right beside each other.
+                    I am so blessed that I got you everytime I faced any challenge.
+                    Your love made me realize that I can be anything I want.
+                    Your care, your trust, your believe in me made me who I am Today.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- MEMORY 6 -->
+        <div class="memory-card reverse">
+            <div class="memory-number">06</div>
+
+            <div class="memory-photo">
+                <img src="images/bday.jpg" alt="Our memory 6">
+            </div>
+
+            <div class="memory-content">
+                <h3>My Favourite Person ❤️</h3>
+                <p>
+                    Somewhere between all the chaos,
+                    you became one of the most important parts of my life.
+                    I want to be with you in all of your future birthdays.
+                    Can you grant me this wish? Pretty, please Khadus?
+                </p>
+            </div>
+        </div>
+
+
+        <!-- MEMORY 7 -->
+        <div class="memory-card final-memory">
+            <div class="memory-number">07</div>
+
+            <div class="memory-photo">
+                <img src="images/family.jpg" alt="Our memory 7">
+            </div>
+
+            <div class="memory-content">
+                <h3>And The Story Continues... ✨</h3>
+                <p>
+                    Seven memories are definitely not enough.
+                    And if I could choose one thing for our future, 
+                    it would be to be a part of your family, 
+                    creating a little home filled with the same love, laughter, 
+                    and madness that we have today.” 🏡❤️
+                    Just like this Picture.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="memory-ending">
+        <span>♡</span>
+        <p>Some memories become stories. Ours became a whole world.</p>
+        <span>♡</span>
+    </div>
+
+    <button class="memory-back-btn" onclick="goBack()">
+    ← Back to Our World
+    </button>
+
+</section>
+
+<!-- ================================= -->
+<!-- HOW TO HANDLE A KHADUS -->
+<!-- ================================= -->
+
+<section class="khadus-manual" id="khadus-files">
+
+    <div class="manual-warning">
+        ⚠️ HANDLE WITH CAUTION
+    </div>
+
+    <div class="manual-header">
+
+        <p class="manual-label">
+            USER MANUAL • CLASSIFIED
+        </p>
+
+        <h1>
+            HOW TO HANDLE<br>
+            <span>A KHADUS</span> 😂
+        </h1>
+
+        <p class="manual-subtitle">
+            Model: Mr. Khadus ❤️
+            <br>
+            Version: Unfortunately, still under development.
+        </p>
+
+        <div class="status-box">
+            <span>SYSTEM STATUS</span>
+            <strong>FUNCTIONAL... PROBABLY.</strong>
+        </div>
+
+    </div>
+
+
+    <!-- LISTENING SYSTEM -->
+
+    <div class="manual-card">
+
+        <div class="manual-number">
+            01
+        </div>
+
+        <div class="manual-icon">
+            👂
+        </div>
+
+        <h2>
+            LISTENING SYSTEM
+        </h2>
+
+        <div class="system-status">
+            SYSTEM STATUS:
+            <strong>FUNCTIONAL</strong>
+        </div>
+
+        <p>
+            Actual performance:
+            <strong>12%</strong>
+        </p>
+
+        <div class="terminal-box">
+
+            <p>INPUT RECEIVED FROM GIRLFRIEND...</p>
+            <p>PROCESSING...</p>
+            <p>PROCESSING...</p>
+            <p class="error-text">
+                ❌ "I DIDN'T HEAR YOU."
+            </p>
+
+        </div>
+
+        <div class="bug-note">
+            🐛 KNOWN BUG:
+            Selective hearing activates whenever girlfriend is correct.
+        </div>
+
+    </div>
+
+
+    <!-- ANGRY GIRLFRIEND SYSTEM -->
+
+    <div class="manual-card tilted">
+
+        <div class="manual-number">
+            02
+        </div>
+
+        <div class="manual-icon">
+            🍽️
+        </div>
+
+        <h2>
+            ANGRY GIRLFRIEND PROTOCOL
+        </h2>
+
+        <p>
+            If girlfriend is angry, DO NOT attempt normal comforting methods.
+        </p>
+
+        <div class="do-not-box">
+
+            ❌ Do not say sorry.<br>
+            ❌ Do not coax her.<br>
+            ❌ Do not ask what happened.<br>
+            ❌ Do not make things better.
+
+        </div>
+
+        <div class="approved-response">
+
+            <span>APPROVED KHADUS RESPONSE:</span>
+
+            <strong>
+                "Have your food."
+            </strong>
+
+        </div>
+
+        <p class="result-text">
+            Expected result:
+            <strong>Girlfriend becomes even angrier. 💀</strong>
+        </p>
+
+    </div>
+
+
+    <!-- FRIEND ALGORITHM -->
+
+    <div class="manual-card">
+
+        <div class="manual-number">
+            03
+        </div>
+
+        <div class="manual-icon">
+            👥
+        </div>
+
+        <h2>
+            FRIEND PRIORITY ALGORITHM
+        </h2>
+
+        <div class="algorithm">
+
+            <p>Girlfriend says:</p>
+
+            <strong>
+                "Spend some time with me."
+            </strong>
+
+            <div class="arrow">↓</div>
+
+            <p>
+                KhaduOS checking priorities...
+            </p>
+
+            <div class="priority-row">
+                <span>❤️ Girlfriend</span>
+                <span>🧑‍🤝‍🧑 Friends</span>
+            </div>
+
+            <div class="error-text">
+                ERROR: DECISION MAKING UNAVAILABLE
+            </div>
+
+            <div class="final-answer">
+                RESULT: FRIENDS. 😂
+            </div>
+
+        </div>
+
+        <button class="fake-button">
+            DENY THAT YOU PRIORITISE YOUR FRIENDS
+        </button>
+
+        <p class="tiny-note">
+            *We both know the answer, Khadus.
+        </p>
+
+    </div>
+
+
+    <!-- FASHION DEPARTMENT -->
+
+    <div class="manual-card tilted">
+
+        <div class="manual-number">
+            04
+        </div>
+
+        <div class="manual-icon">
+            👗
+        </div>
+
+        <h2>
+            FASHION DEPARTMENT
+        </h2>
+
+        <div class="conversation">
+
+            <div class="girl">
+                👩 "I like this dress."
+            </div>
+
+            <div class="khadus-response">
+                👨 "No."
+            </div>
+
+            <div class="girl">
+                👩 "Why?"
+            </div>
+
+            <div class="khadus-response">
+                👨 "It won't suit you."
+            </div>
+
+            <div class="girl">
+                👩 "What about this one?"
+            </div>
+
+            <div class="khadus-response">
+                👨 "No."
+            </div>
+
+        </div>
+
+        <div class="fashion-warning">
+            ⚠️ NOTICE
+            <br>
+            Girlfriend's wardrobe requires Khadus approval™
+        </div>
+
+    </div>
+
+
+    <!-- JIN FIREWALL -->
+
+    <div class="manual-card jin-system">
+
+        <div class="manual-number">
+            05
+        </div>
+
+        <div class="manual-icon">
+            💜
+        </div>
+
+        <h2>
+            JIN FIREWALL
+        </h2>
+
+        <div class="alert-box">
+
+            🚨 SYSTEM ALERT 🚨
+
+            <br><br>
+
+            BTS MEMBER DETECTED
+
+        </div>
+
+        <div class="jin-info">
+
+            <p>
+                NAME:
+                <strong>JIN</strong>
+            </p>
+
+            <p>
+                ACTUAL THREAT LEVEL:
+                <span class="safe">🟢 0%</span>
+            </p>
+
+            <p>
+                THREAT LEVEL ACCORDING TO KHADUS:
+                <span class="danger">🔴 500%</span>
+            </p>
+
+        </div>
+
+        <div class="jin-reason">
+
+            REASON FOR CONCERN:
+
+            <strong>
+                Girlfriend thinks Jin is cute. 😂
+            </strong>
+
+        </div>
+
+        <div class="firewall">
+            JEALOUSY FIREWALL: ACTIVATED 💜
+        </div>
+
+    </div>
+
+
+    <!-- I'M SCARED -->
+
+    <div class="manual-card tilted">
+
+        <div class="manual-number">
+            06
+        </div>
+
+        <div class="manual-icon">
+            😨
+        </div>
+
+        <h2>
+            "I'M SCARED OF YOU" FEATURE
+        </h2>
+
+        <div class="claim">
+            KHADUS CLAIM:
+            <strong>"I'm scared of you."</strong>
+        </div>
+
+        <div class="reality-check">
+
+            <p>
+                Does he listen?
+                <strong>❌</strong>
+            </p>
+
+            <p>
+                Does he do whatever he wants?
+                <strong>✅</strong>
+            </p>
+
+            <p>
+                Does he accept girlfriend is right?
+                <strong>❌</strong>
+            </p>
+
+            <p>
+                Does he still annoy her?
+                <strong>✅</strong>
+            </p>
+
+        </div>
+
+        <div class="system-error">
+            FEAR.EXE HAS STOPPED RESPONDING.
+        </div>
+
+    </div>
+
+
+    <!-- PROPOSAL -->
+
+    <div class="manual-card proposal-system">
+
+        <div class="manual-number">
+            07
+        </div>
+
+        <div class="manual-icon">
+            💍
+        </div>
+
+        <h2>
+            SYSTEM ERROR:
+            <br>
+            PROPOSAL NOT FOUND
+        </h2>
+
+        <div class="search-system">
+
+            <p>SEARCHING...</p>
+
+            <p>
+                Relationship ..............
+                <strong>FOUND ❤️</strong>
+            </p>
+
+            <p>
+                Love ......................
+                <strong>FOUND ❤️</strong>
+            </p>
+
+            <p>
+                Memories ..................
+                <strong>FOUND ❤️</strong>
+            </p>
+
+            <p>
+                Girlfriend ................
+                <strong>FOUND ❤️</strong>
+            </p>
+
+            <p>
+                Years together ............
+                <strong>FOUND ❤️</strong>
+            </p>
+
+            <hr>
+
+            <p class="not-found">
+                Proposal ..................
+                <strong>NOT FOUND ❌</strong>
+            </p>
+
+        </div>
+
+        <div class="search-again">
+            SEARCHING AGAIN...
+        </div>
+
+        <div class="proposal-error">
+            PROPOSAL STILL NOT FOUND 💀
+        </div>
+
+        <h3>
+            KHADUS, PLEASE UPDATE YOUR SOFTWARE.
+        </h3>
+
+        <div class="update-box">
+            EXPECTED UPDATE:
+            <strong>💍 PROPOSAL v1.0</strong>
+        </div>
+
+    </div>
+
+
+    <!-- FINAL MESSAGE -->
+
+    <div class="manual-ending">
+
+        <p class="ending-label">
+            ⚠️ FINAL SYSTEM REPORT ⚠️
+        </p>
+
+        <h2>
+            But here's the actual problem
+            with you, Khadus...
+        </h2>
+
+        <p>
+            Somehow, despite all these bugs,
+            I wouldn't replace this ridiculous version of you.
+        </p>
+
+        <p>
+            Because you're the person I fight with,
+            laugh with, annoy, get angry at,
+            forgive, and still choose.
+        </p>
+
+        <div class="final-line">
+
+            <p>
+                Your software is questionable.
+            </p>
+
+            <p>
+                Your listening skills need immediate improvement.
+            </p>
+
+            <p>
+                Your proposal department is clearly broken.
+            </p>
+
+            <h3>
+                But unfortunately...
+            </h3>
+
+            <h1>
+                You're still my favourite person. ❤️
+            </h1>
+
+        </div>
+
+        <p class="manual-signature">
+            System administrator:
+            <strong>Your girlfriend 👩‍💻❤️</strong>
+        </p>
+
+    </div>
+
+
+    <button class="khadus-back-btn" onclick="goBack()">
+        ← Back to Our World
+    </button>
+
+</section>
+
+<!-- ================================= -->
+<!-- A LETTER FOR YOU -->
+<!-- ================================= -->
+
+<section class="letter-section" id="letter-section">
+
+    <button class="back-button" onclick="goBack()">
+        ← Back to Our World
+    </button>
+
+    <div class="letter-container">
+
+        <p class="letter-label">
+            ✦ THE LAST CHAPTER ✦
+        </p>
+
+        <h1>
+            A Letter<br>
+            <span>For You ❤️</span>
+        </h1>
+
+        <p class="letter-intro">
+            Okay Khadus... enough teasing.
+            <br>
+            This one is serious. 🥹
+        </p>
+
+
+        <!-- LETTER PAPER -->
+
+        <div class="letter-paper">
+
+            <div class="letter-top">
+                <span>To: My Favourite Khadus ❤️</span>
+                <span>From: Your Girlfriend</span>
+            </div>
+
+            <div class="letter-content">
+
+                <p>
+                    Dear Khadus,
+                </p>
+
+                <p>
+                    I don't think I say this enough, but I am really,
+                    really grateful that you came into my life.
+                </p>
+
+                <p>
+                    When I think about us, I don't just think about
+                    the happy moments.
+                </p>
+
+                <p>
+                    I think about the fights.
+                    The stupid arguments.
+                    The teasing.
+                    The annoying each other for absolutely no reason.
+                </p>
+
+                <p>
+                    And somehow, through all of it,
+                    we still chose each other.
+                </p>
+
+                <p>
+                    You have seen so many versions of me.
+                    The happy one.
+                    The emotional one.
+                    The stubborn one.
+                    The one who overthinks everything.
+                    And probably the one who can be quite a headache. 😂
+                </p>
+
+                <p>
+                    And yet, you stayed.
+                </p>
+
+                <p class="letter-highlight">
+                    That means more to me than I can ever properly explain.
+                </p>
+
+                <p>
+                    Thank you for believing in me when I didn't believe
+                    in myself.
+                </p>
+
+                <p>
+                    Thank you for being there when things were difficult.
+                    For caring about me.
+                    For trusting me.
+                    For making me laugh.
+                    And for somehow managing to annoy me
+                    at exactly the wrong time. 😂
+                </p>
+
+                <p>
+                    You have become such an important part of my life
+                    that I genuinely cannot imagine my story without you.
+                </p>
+
+                <p>
+                    I don't know exactly what the future will look like.
+                    But I know one thing.
+                </p>
+
+                <p class="letter-highlight big">
+                    I want to see it with you. ❤️
+                </p>
+
+                <p>
+                    I want more birthdays.
+                    More silly fights.
+                    More random conversations.
+                    More memories.
+                    More pictures.
+                    More laughter.
+                    More of us.
+                </p>
+
+                <p>
+                    And yes...
+                    I still want to annoy you for the rest of your life. 😌
+                </p>
+
+                <p>
+                    So here's to everything we've already lived,
+                    everything we're living now,
+                    and everything that's still waiting for us.
+                </p>
+
+                <p>
+                    No matter how many years pass,
+                    I hope we always remain a little bit crazy,
+                    a little bit annoying,
+                    and completely ourselves.
+                </p>
+
+                <p class="letter-ending">
+                    I love you, Khadus.
+                    <br>
+                    More than these words can hold. ❤️
+                </p>
+
+                <p class="signature">
+                    Forever yours,
+                    <br>
+                    <strong>Your favourite headache ❤️</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- BIRTHDAY ENDING -->
+
+        <div class="birthday-ending">
+
+            <div class="birthday-stars">
+                ✦ ✧ ✦ ✧ ✦
+            </div>
+
+            <p>
+                And finally...
+            </p>
+
+            <h2>
+                HAPPY BIRTHDAY
+            </h2>
+
+            <h1>
+                MR. KHADUS ❤️
+            </h1>
+
+            <p>
+                May this year bring you everything
+                your heart has been waiting for.
+            </p>
+
+            <p class="birthday-final">
+                And may I be there for all of it. 🥹❤️
+            </p>
+
+            <div class="birthday-stars">
+                ✦ ✧ ✦ ✧ ✦
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
